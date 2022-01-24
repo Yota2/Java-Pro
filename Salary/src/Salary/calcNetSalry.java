@@ -13,7 +13,9 @@ public class calcNetSalry {
           // How can i format  float values.
 
         //Calc Net Sal
-        int  netSalary  =  (Salary * 75)/100;
+        int Tax =21;
+        int TaxedAmount = (Salary * Tax) /100;
+        int  netSalary  =  Salary - TaxedAmount;
         System.out.printf("Hallo : %s you live in %s  your netIncome is %d%n euros" , userName,place, netSalary);
 
     }
