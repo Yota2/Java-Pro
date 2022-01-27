@@ -7,13 +7,12 @@ public class forlooparray {
             if(a[i]%2!=0){
                 System.out.println(a[i] + "fizz");
             }
+            else{
         }
-        System.out.println("buz:");
-        for(int i=0;i<a.length;i++){
-            if(a[i]%2==0){
-                System.out.println(a[i] + "buz");
-            }
-        }
-    }}
+        System.out.println(a[i] + "buz");
+
+            }}}
+
+
 
 
