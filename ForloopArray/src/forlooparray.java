@@ -8,8 +8,9 @@ public class forlooparray {
                 System.out.println(a[i] + "fizz");
             }
             else{
+                System.out.println(a[i] + "buz");
         }
-        System.out.println(a[i] + "buz");
+
 
             }}}
 
