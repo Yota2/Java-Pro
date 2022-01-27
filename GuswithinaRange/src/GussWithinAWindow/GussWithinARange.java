@@ -15,7 +15,7 @@ public class GussWithinARange {
             System.out.println("Guess a number between 1 and 10: ");
             // guess value
             guess = in.nextInt();
-            // if guess is greater than actual
+
             if (guess > answer) {
                 System.out.println("Go lower  , try again");
             }
@@ -23,7 +23,6 @@ public class GussWithinARange {
                 System.out.println("Go higher , try again");
             }
             else {
-
                 System.out.println(" Congratulation 😄😄😄!!! you guessed the.It was:  " + guess);
                 correct = true;
             }
