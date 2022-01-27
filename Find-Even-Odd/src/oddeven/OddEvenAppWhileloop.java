@@ -5,11 +5,11 @@ public class OddEvenAppWhileloop {
         System.out.println("--Get even and odd under 100");
 
             int i = 1;
-            while (i < 100) {
+            while (i < 21) {
                 if(i % 2 == 0)
-                    System.out.println(i + " is even");
+                    System.out.println(i + " is buz");
                 else
-                    System.out.println(i + " is odd");
+                    System.out.println(i + " is fiz");
                 i++;
             }
             };
