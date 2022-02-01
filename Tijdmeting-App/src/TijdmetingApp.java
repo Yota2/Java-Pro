@@ -115,15 +115,18 @@ public class TijdmetingApp {
                     if(stophours < 7 && stophours > 0.01 ){
                         bonsFriday = (stophours*11.25)*1.25;
                        // System.out.println(bonsFriday);
-                        friDayhour = 24.0 - startHour;
+                        friDayhour =( 24.0 - startHour)*11.25;
                         totaltimeWork = friDayhour + bonsFriday;
-                        System.out.println(totaltimeWork);
-                        }
+                        fridaysalary =  friDayhour +  bonsFriday;
+                       // System.out.println(fridaysalary);
+                        System.out.println("Start uur " + "     \t     " + "Stop uur " + "     \t     " + "Startday " + "     \t     " + "Enday" + "     \t          " + "uur gewerkt" + "     \t      " + "Loon");
+                        System.out.print(startHour + "u" + startminutes + "m" + "     \t           " + stophours + "u" + startminutes + "m" + "     \t       " + "Friday" + "      \t     " + "Friday" + "       \t        " + worktotalhour + "u" + totalminutes + "m" + "     \t	      " + fridaysalary  + "€");
 
-                    fridaysalary = (double) (salaryPerMinutes * totaltimeWork);
-                    System.out.println("Start uur " + "     \t     " + "Stop uur " + "     \t     " + "Startday " + "     \t     " + "Enday" + "     \t          " + "uur gewerkt" + "     \t      " + "Loon");
-                    System.out.print(startHour + "u" + startminutes + "m"+ "     \t           " + stophours + "u" + startminutes + "m"+ "     \t       " + "Friday" + "      \t     " + "Friday" + "       \t        " + worktotalhour + "u"+ totalminutes + "m"+ "     \t	      " + fridaysalary/100+ "€");
-                break;
+                        } else {
+                        fridaysalary = (double) (salaryPerMinutes * totaltimeWork);
+                        System.out.println("Start uur " + "     \t     " + "Stop uur " + "     \t     " + "Startday " + "     \t     " + "Enday" + "     \t          " + "uur gewerkt" + "     \t      " + "Loon");
+                        System.out.print(startHour + "u" + startminutes + "m" + "     \t           " + stophours + "u" + startminutes + "m" + "     \t       " + "Friday" + "      \t     " + "Friday" + "       \t        " + worktotalhour + "u" + totalminutes + "m" + "     \t	      " + fridaysalary /100 + "€");
+                    }break;
                 case 6:
                     saturdaySalary = (double) (salaryPerMinutes * totaltimeWork);
                     System.out.println("Start uur " + "     \t     " + "Stop uur " + "     \t     " + "Startday " + "     \t     " + "Enday" + "     \t          " + "uur gewerkt" + "     \t      " + "Loon");
